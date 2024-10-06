@@ -11,7 +11,6 @@ function WordAnalysis({ wordAnalysisPopup, selectedWord }) {
         <div className="font-semibold text-lg">Word Analysis</div>
         <div className="flex flex-col ">
           <div className="text-base">{selectedWord?.text_uthmani}</div>
-
           <div className="text-base">{selectedWord?.translation.text}</div>
           <div className="text-base">{selectedWord?.transliteration.text}</div>
         </div>
