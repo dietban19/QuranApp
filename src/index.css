@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(//fonts.googleapis.com/earlyaccess/amiri.css);
+@import url(//fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@import url(//fonts.googleapis.com/earlyaccess/thabit.css);
+
+@font-face {
+  font-family: "MeQuran";
+  src: url("//cdn.alquran.cloud/public/fonts/me_quran-webfont.otf");
+}
+
+.font-mequran {
+  font-family: "MeQuran";
+}
+
+@font-face {
+  font-family: "MeQuran2";
+  src: url("//cdn.alquran.cloud/public/fonts/me_quran_2.ttf");
+}
+
+.font-mequran2 {
+  font-family: "MeQuran2";
+}
+
+@font-face {
+  font-family: "NooreHidayah";
+  src: url("//cdn.alquran.cloud/public/fonts/noorehidayat.ttf");
+}
+
+.font-nh {
+  font-family: "NooreHidayah";
+}
+
+@font-face {
+  font-family: "Othmani";
+  src: url("//cdn.alquran.cloud/public/fonts/ar-Othmani.ttf");
+}
+
+.font-othmani {
+  font-family: "Othmani";
+}
+
+@font-face {
+  font-family: "Quran";
+  src: url("//cdn.alquran.cloud/public/fonts/QUR_STD.TTF");
+}
+
+.font-quran {
+  font-family: "Quran";
+}
+
+@font-face {
+  font-family: "Uthmani";
+  src: url("//cdn.alquran.cloud/public/fonts/uthman_tn09.otf")
+    format("opentype");
+}
+
+.font-uthmani {
+  font-family: "Uthmani", serif;
+}
+
+@font-face {
+  font-family: "Scheherazade";
+  src: url("//cdn.alquran.cloud/public/fonts/Scheherazade-webfont.ttf");
+}
+
+.font-scheherazade {
+  font-family: "Scheherazade";
+}
+
+@font-face {
+  font-family: "Naskh";
+  src: url("//cdn.alquran.cloud/public/fonts/kfc_naskh-webfont.ttf");
+}
+
+.font-naskh {
+  font-family: "Naskh";
+}
+
+@font-face {
+  font-family: "Kitab";
+  src: url("//cdn.alquran.cloud/public/fonts/Kitab-Regular.ttf");
+}
+
+.font-kitab {
+  font-family: "Kitab";
+}
+
+@font-face {
+  font-family: "Kitab Bold";
+  src: url("//cdn.alquran.cloud/public/fonts/Kitab-Bold.ttf");
+}
+
+.font-kitab-bold {
+  font-family: "Kitab Bold";
+}
+
+.font-amiri {
+  font-family: "Amiri", serif;
+}
+
+.font-droid-arabic-kufi {
+  font-family: "Droid Arabic Kufi", serif;
+}
+
+.font-droid-arabic-naskh {
+  font-family: "Droid Arabic Naskh", serif;
+}
+
+.font-thabit {
+  font-family: "Thabit", serif;
+}
+
+/* Global default theme */
+
+:root {
+  --color-primary: #f8ebd5;
+  --color-secondary: #efe2cd;
+  --color-background: #fff7ea;
+  --color-text: #72603f;
+}
+
+[data-theme="sepia"] {
+  --color-primary: #f8ebd5;
+  --color-secondary: #efe2cd;
+  --color-background: #fff7ea;
+  --color-text-main: #72603f;
+  --color-text: rgb(24, 24, 24);
+  --color-button-bg: #72603f; /* Dark sepia color for button background */
+  --color-button-text: #fff7ea; /* Light text for button */
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --color-primary: #60a5fa;
+  --color-secondary: #93c5fd;
+  --color-background: #f9fafb;
+  --color-text-main: #111827;
+  --color-button-bg: #60a5fa; /* Blue background for button */
+  --color-button-text: #ffffff; /* White text for button */
+  --color-text: rgb(24, 24, 24);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-primary: #1f2125;
+  --color-secondary: #343a40;
+  --color-background: #343a40;
+  --color-text-main: #deefff;
+  --color-button-bg: #2ba4ab; /* Teal button background */
+  --color-button-text: #ffffff; /* White text for button */
+  --color-text: rgb(245, 245, 245);
+}
+
+/* Ocean theme */
+[data-theme="ocean"] {
+  --color-primary: #80deea;
+  --color-secondary: #4dd0e1;
+  --color-background: #e0f7fa;
+  --color-text-main: #004d40;
+  --color-button-bg: #004d40; /* Dark teal background for button */
+  --color-button-text: #e0f7fa; /* Light background color for text */
+  --color-text: rgb(24, 24, 24);
+}
+
+/* Forest theme */
+[data-theme="forest"] {
+  --color-primary: #a3d9a5;
+  --color-secondary: #81c784;
+  --color-background: #e6f4ea;
+  --color-text-main: #2e7d32;
+  --color-button-bg: #2e7d32; /* Dark green button background */
+  --color-button-text: #e6f4ea; /* Light text for button */
+  --color-text: rgb(24, 24, 24);
+}
+
+/* Sunset theme */
+[data-theme="sunset"] {
+  --color-primary: #ffab91;
+  --color-secondary: #ff7043;
+  --color-background: #ffe5d9;
+  --color-text-main: #d84315;
+  --color-button-bg: #d84315; /* Dark orange button background */
+  --color-button-text: #ffe5d9; /* Light background color for button text */
+  --color-text: rgb(24, 24, 24);
+}
+
+/* Lavender theme */
+[data-theme="lavender"] {
+  --color-primary: #d4bfff;
+  --color-secondary: #b18cff;
+  --color-background: #f3e8ff;
+  --color-text-main: #4527a0;
+  --color-button-bg: #4527a0; /* Dark purple button background */
+  --color-button-text: #f3e8ff; /* Light text for button */
+  --color-text: rgb(24, 24, 24);
+}
+
+/* Rose theme */
+[data-theme="rose"] {
+  --color-primary: #fca5a5;
+  --color-secondary: #fb7185;
+  --color-background: #fff1f2;
+  --color-text-main: #881337;
+  --color-button-bg: #881337; /* Dark rose button background */
+  --color-button-text: #fff1f2; /* Light text for button */
+  --color-text: rgb(24, 24, 24);
+}
+
+/* Slate theme */
+[data-theme="slate"] {
+  --color-primary: #cfd8dc;
+  --color-secondary: #90a4ae;
+  --color-background: #f0f4f8;
+  --color-text-main: #263238;
+  --color-button-bg: #263238; /* Dark slate button background */
+  --color-button-text: #f0f4f8; /* Light text for button */
+  --color-text: rgb(24, 24, 24);
+}
